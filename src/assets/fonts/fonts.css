@@ -1,0 +1,5 @@
+/* Oswald Fonts */
+@font-face {
+    font-family: "Oswald-Regular";
+    src: local("Oswald-Regular"), url("./oswald/Oswald-VariableFontwght.woff") format("woff");
+}
