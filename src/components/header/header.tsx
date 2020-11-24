@@ -13,8 +13,6 @@ const styles = makeStyles((theme) => ({
         margin: "10px 0 10px 0",
         height: 70,
     },
-    links: {
-    },
     link: {
         textDecoration: "none",
         color: "var(--white)",
@@ -33,7 +31,7 @@ function Header() {
         <AppBar className={classes.container}>
             <Toolbar className={classes.innerContainer}>
                 <Logo className={classes.img}/>
-                <div className={classes.links}>
+                <div>
                     <Link className={classes.link} href="/home" >Home</Link>
                     <Link className={classes.link} href="/about" >About</Link>
                     <Link className={classes.link} href="/menu" >Menu</Link>

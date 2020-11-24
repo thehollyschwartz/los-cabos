@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Toolbar } from "@material-ui/core";
+import Home from "./pages/home/home";
 import Header from "./components/header/header";
 
 function App() {
@@ -7,6 +9,8 @@ function App() {
       <Switch>
         <Route path='/home'>
           <Header />
+          <Toolbar />
+          <Home />
         </Route>
         <Route path='/about'>
           <h1>About</h1>
