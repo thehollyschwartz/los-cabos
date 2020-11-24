@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Header from "./components/header/header";
 
 function App() {
   return (
     <Router>
       <Switch>
         <Route path='/home'>
-          <h1>Home</h1>
+          <Header />
         </Route>
         <Route path='/about'>
           <h1>About</h1>
