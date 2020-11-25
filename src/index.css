@@ -11,9 +11,17 @@ body {
   background-image: url("./assets/images/background.png");
   background-size: cover;
   margin: 0;
-
 }
 
 code {
   font-family: Oswald-Regular;
+}
+
+h1 {
+  font-family: SigmarOne-Regular;
+  font-size: 7vh;
+}
+
+p {
+  font-size: 3vh;
 }
