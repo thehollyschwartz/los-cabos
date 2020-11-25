@@ -1,0 +1,11 @@
+/* Oswald Fonts */
+@font-face {
+    font-family: "Oswald-Regular";
+    src: local("Oswald-Regular"), url("./oswald/Oswald-VariableFontwght.woff") format("woff");
+}
+
+/* Sigmar One Fonts */
+@font-face {
+    font-family: "SigmarOne-Regular";
+    src: local("SigmarOne-Regular"), url("./sigmar-one/SigmarOne-Regular.woff") format("woff");
+}
