@@ -7,9 +7,8 @@ import Image from "../../assets/images/green-background.svg"; // Import using re
 
 const styles = makeStyles((theme) => ({
     container: {
-        backgroundImage: `url(${Image})`,
-        backgroundSize: "cover",
-        height: "80vh",
+        backgroundColor: "var(--tertiary)",
+        // height: "80vh",
     },
     title: {
         color: "var(--white)",
@@ -53,12 +52,11 @@ function About() {
                     <p>Please accept our personal invitation to join us for authentic<br/> 
                     Mexican food served at our relaxing atmosphere of a <br/> 
                     resturant.</p>
-                </div>          
-                <Taco className={classes.img}/>
+                </div>  
+                {/* <Taco className={classes.img}/> */}
             </Grid>
         </Grid>
     )
 }
 
 export default About;
-
