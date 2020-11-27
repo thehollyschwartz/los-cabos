@@ -1,5 +1,7 @@
 :root {
   --primary: #F2B200;
+  --secondary: #E84943;
+  --tertiary: #006E4A;
   --white: #FFFFFF;
   --black: #000000;
 }
@@ -20,6 +22,11 @@ code {
 h1 {
   font-family: SigmarOne-Regular;
   font-size: 7vh;
+}
+
+h2 {
+  font-family: SigmarOne-Regular;
+  font-size: 2vh;
 }
 
 p {
