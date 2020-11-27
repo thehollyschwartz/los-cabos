@@ -1,7 +1,7 @@
 import React from "react";
-import { Grid, Button, makeStyles, AppBar, Tabs, Tab, Typography, Box, Card, CardContent, CardActions, Paper } from "@material-ui/core";
-import { ReactComponent as Taco } from "../../assets/images/taco.svg";
-import Image from "../../assets/images/green-background.svg"; 
+import { Grid, makeStyles, AppBar, Tabs, Tab, Box} from "@material-ui/core";
+import Appetizers from "../../components/menu/appetizers/appetizers";
+import Soup from "../../components/menu/soup/soup";
 // import classes from "*.module.css";
 
 
@@ -28,7 +28,7 @@ const styles = makeStyles((theme) => ({
         height: "60vh",
     }, 
     tab: {
-        fontFamily: "Oswald-Regular",
+        fontFamily: "SigmarOne-Regular",
         '&:hover': {
             color: "var(--secondary)",
             opacity: 1,
@@ -65,6 +65,8 @@ const styles = makeStyles((theme) => ({
     tabContainer: {
         display: "flex",
         flexWrap: "wrap",
+        alignItems: "flex-start",
+        justify: "flex-start"
         // margin: 10,
     },
     hello: {
@@ -134,7 +136,7 @@ function Menu() {
                 alignItems="center"
                 justify="space-between"
             >  
-                <AppBar position="static" color="default" className={classes.container}> 
+                <AppBar position="relative" color="default" className={classes.container}> 
                     <Tabs
                         value={value}
                         onChange={handleChange}
@@ -142,89 +144,52 @@ function Menu() {
                         scrollButtons="auto"
                         classes={{ indicator: classes.indicator }}
                     >
-                        <Tab classes={{selected: classes.select}} className={classes.tab} label="Appetizers" {...a11yProps(0)} />
-                        <Tab className={classes.tab} label="Soups/Salads" {...a11yProps(1)} />
-                        <Tab className={classes.tab} label="Sides" {...a11yProps(2)} />
-                        <Tab className={classes.tab} label="Main Courses" {...a11yProps(3)} />
+                        <Tab className={classes.tab} classes={{selected: classes.select}}  label="Antojitos" {...a11yProps(0)} />
+                        <Tab className={classes.tab} label="Sopas Especiales" {...a11yProps(1)} />
+                        <Tab className={classes.tab} label="Ensaladas" {...a11yProps(2)} />
+                        <Tab className={classes.tab} label="Side Orders" {...a11yProps(3)} />
                         <Tab className={classes.tab} label="Combos" {...a11yProps(4)} />
                         <Tab className={classes.tab} label="Lunch" {...a11yProps(5)} />
                         <Tab className={classes.tab} label="Fajitas" {...a11yProps(6)} />
-                        <Tab className={classes.tab} label="Burritos" {...a11yProps(3)} />
-                        <Tab className={classes.tab} label="Enchiladas Grandes" {...a11yProps(4)} />
-                        <Tab className={classes.tab} label="Dessert" {...a11yProps(5)} />
-                        <Tab className={classes.tab} label="Drinks" {...a11yProps(6)} />
+                        <Tab className={classes.tab} label="Burritos" {...a11yProps(7)} />
+                        <Tab className={classes.tab} label="Enchiladas Grandes" {...a11yProps(8)} />
+                        <Tab className={classes.tab} label="Dessert" {...a11yProps(9)} />
+                        <Tab className={classes.tab} label="Drinks" {...a11yProps(10)} />
                     </Tabs>
                 </AppBar>
                 <TabPanel value={value} index={0}>
-                <Grid
-                    container
-                    direction="row"
-                    alignItems="center"
-                    justify="flex-start"
-                >  
-                    <Card className={classes.food} variant="outlined">
-                        <CardContent>
-                            <h2>Deluxe Nachos</h2>
-                            <p className={classes.content}>Corn chips topped with melted cheese, refried beans,<br/>fresh tomato, onion, guacamole, & sour cream, 11.50.<br/>With ground beef or chicken, 12.50.</p>
-                        </CardContent>
-                    </Card>
-                    <Card className={classes.food} variant="outlined">
-                        <CardContent>
-                            <h2>Deluxe Nachos</h2>
-                            <p className={classes.content}>Corn chips topped with melted cheese, refried beans,<br/>fresh tomato, onion, guacamole, & sour cream, 11.50.<br/>With ground beef or chicken, 12.50.</p>
-                        </CardContent>
-                    </Card>
-                    <Card className={classes.food} variant="outlined">
-                        <CardContent>
-                            <h2>Deluxe Nachos</h2>
-                            <p className={classes.content}>Corn chips topped with melted cheese, refried beans,<br/>fresh tomato, onion, guacamole, & sour cream, 11.50.<br/>With ground beef or chicken, 12.50.</p>
-                        </CardContent>
-                    </Card>
-                    <Card className={classes.food} variant="outlined">
-                        <CardContent>
-                            <h2>Deluxe Nachos</h2>
-                            <p className={classes.content}>Corn chips topped with melted cheese, refried beans,<br/>fresh tomato, onion, guacamole, & sour cream, 11.50.<br/>With ground beef or chicken, 12.50.</p>
-                        </CardContent>
-                    </Card>
-                    <Card className={classes.food} variant="outlined">
-                        <CardContent>
-                            <h2>Deluxe Nachos</h2>
-                            <p className={classes.content}>Corn chips topped with melted cheese, refried beans,<br/>fresh tomato, onion, guacamole, & sour cream, 11.50.<br/>With ground beef or chicken, 12.50.</p>
-                        </CardContent>
-                    </Card>
-                    <Card className={classes.food} variant="outlined">
-                        <CardContent>
-                            <h2>Deluxe Nachos</h2>
-                            <p className={classes.content}>Corn chips topped with melted cheese, refried beans,<br/>fresh tomato, onion, guacamole, & sour cream, 11.50.<br/>With ground beef or chicken, 12.50.</p>
-                        </CardContent>
-                    </Card>
-                    <Card className={classes.food} variant="outlined">
-                        <CardContent>
-                            <h2>Deluxe Nachos</h2>
-                            <p className={classes.content}>Corn chips topped with melted cheese, refried beans,<br/>fresh tomato, onion, guacamole, & sour cream, 11.50.<br/>With ground beef or chicken, 12.50.</p>
-                        </CardContent>
-                    </Card>
-                    </Grid>
-                
-                    
+                    <Appetizers />
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    Item Two
+                    <Soup />
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                    Item Three
+                    {/* <Sides /> */}
                 </TabPanel>
                 <TabPanel value={value} index={3}>
-                    Item Four
+                    {/* <Main /> */}
                 </TabPanel>
                 <TabPanel value={value} index={4}>
-                    Item Five
+                    {/* <Combos /> */}
                 </TabPanel>
                 <TabPanel value={value} index={5}>
-                    Item Six
+                    {/* <Lunch /> */}
                 </TabPanel>
                 <TabPanel value={value} index={6}>
-                    Item Seven
+                    {/* <Fajitas /> */}
+                </TabPanel>
+
+                <TabPanel value={value} index={7}>
+                    {/* <Burritos /> */}
+                </TabPanel>
+                <TabPanel value={value} index={8}>
+                    {/* <Enchiladas /> */}
+                </TabPanel>
+                <TabPanel value={value} index={9}>
+                    {/* <Dessert /> */}
+                </TabPanel>
+                <TabPanel value={value} index={9}>
+                    {/* <Drinks /> */}
                 </TabPanel>
             </Grid>
         </Grid>
