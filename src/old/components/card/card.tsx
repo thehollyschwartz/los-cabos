@@ -10,7 +10,7 @@ const styles = makeStyles((theme) => ({
     root: {
         fontFamily: "Oswald-Regular",
         margin: 10,
-        width: "20%",
+        width: 200,
     },
     label: {
         fontFamily: "Oswald-Regular",
@@ -22,14 +22,14 @@ const styles = makeStyles((theme) => ({
     },
     media: {
         height: 140
-      },
-    
+    },
+
     expand: {
         marginLeft: 'auto',
-      },
+    },
     expandOpen: {
         transform: 'rotate(180deg)',
-      },
+    },
 }))
 
 function MenuCard(props: any) {
@@ -37,7 +37,7 @@ function MenuCard(props: any) {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
-      setExpanded(!expanded);
+        setExpanded(!expanded);
     };
     return (
         <Card className={classes.root}>
@@ -51,19 +51,19 @@ function MenuCard(props: any) {
             <CardActions disableSpacing>
                 <p className={classes.text}>{props.price}</p>
                 <IconButton
-                className={clsx(classes.expand, {
-                    [classes.expandOpen]: expanded,
-                })}
-                onClick={handleExpandClick}
-                aria-expanded={expanded}
-                aria-label="show more"
+                    className={clsx(classes.expand, {
+                        [classes.expandOpen]: expanded,
+                    })}
+                    onClick={handleExpandClick}
+                    aria-expanded={expanded}
+                    aria-label="show more"
                 >
-                <ExpandMoreIcon />
+                    <ExpandMoreIcon />
                 </IconButton>
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-                <p className={classes.text}>{props.content}</p>
+                    <p className={classes.text}>{props.content}</p>
                 </CardContent>
             </Collapse>
         </Card>
