@@ -162,3 +162,31 @@ export const DOS_AMIGOS_TITLE = "Dos Amigos";
 export const DOS_AMIGOS_CONTENT = ["A combination " + <strong>Chile Colorado</strong> + " (lean chunks of beef simmered in our delicious Mexican chile sauce) amd " + <strong>Chile Verde</strong> + " (tender chunks of lean pork in a light tomatillo sauce and Mexican spices). Served with rice, beans, and tortillas, 20.95."];
 export const DOS_AMIGOS_PRICE = "$20.95";
 
+// Chicken Main Courses.
+export const POLLO_CARNITAS_TITLE = "Pollo Carnitas";
+export const POLLO_CARNITAS_CONTENT = "Strips of chicken breast, sautéed with onion, green peppers, tomato, and special sauce. Served with rice, beans, guacamole, and tortillas, 18.95.";
+export const POLLO_CARNITAS_PRICE = "$18.95";
+
+export const POLLO_ASADO_TITLE = "Pollo Asado";
+export const POLLO_ASADO_CONTENT = "Charbroiled chicken breast topped with sautéed onion and mushrooms with rice, beans, and tortillas, 18.95.";
+export const POLLO_ASADO_PRICE = "$18.95";
+
+export const POLLO_EN_MOLE_TITLE = "Pollo En Mole";
+export const POLLO_EN_MOLE_CONTENT = "Strips of chicken breast simmered in our sweet mole sauce. Served with rice, beans, and tortillas, 18.95.";
+export const POLLO_EN_MOLE_PRICE = "$18.95";
+
+export const POLLO_A_LA_DIABLA_TITLE = "Pollo A La Diabla";
+export const POLLO_A_LA_DIABLA_CONTENT = ["Strips of chicken breast sautéed with mushrooms and onion in a " + <strong>spicy hot</strong> + " Mexican sauce. Served with rice, beans, and tortillas, 18.95."];
+export const POLLO_A_LA_DIABLA_PRICE = "$18.95";
+
+export const POLLO_A_LA_CREMA_TITLE = "Pollo A La Crema";
+export const POLLO_A_LA_CREMA_CONTENT = "Strips of chicken breast sautéed with carrots, celery, onion, and green peopers simmered in a light cream sauce. topped with Parmesan cheese. Served with rice, beans, and tortillas, 18.95.";
+export const POLLO_A_LA_CREMA_PRICE = "$18.95";
+
+export const ARROZ_CON_POLLO_TITLE = "Arroz Con Pollo";
+export const ARROZ_CON_POLLO_CONTENT = "Boneless chicken breast and mushrooms, sautéed in our special sauce over a bed of rice. Garnished with onion, tomato, and melted Jack cheese. Served with tortillas, 18.95.";
+export const ARROZ_CON_POLLO_PRICE = "$18.95";
+
+export const LOS_CABOS_POLLO_TITLE = "Los Cabos Pollo";
+export const LOS_CABOS_POLLO_CONTENT = "Tender chicken breast strips sautéed with green peoppers, onion, celery, carrots, mushrooms, and whole beans over a bed of fresh lettuce. Served with tortillas, 18.95.";
+export const LOS_CABOS_POLLO_PRICE = "$18.95";

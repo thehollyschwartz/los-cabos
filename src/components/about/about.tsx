@@ -6,11 +6,11 @@ const styles = makeStyles(() => ({
 
 }));
 
-function Menu() {
+function About() {
     const classes = styles();
     return (
         <div></div>
     )
 }
 
-export default Menu;
+export default About;

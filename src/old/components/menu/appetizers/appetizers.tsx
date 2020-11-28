@@ -9,7 +9,7 @@ function Appetizers(props: any) {
             container
             direction="row"
             alignItems="flex-start"
-            justify="flex-start"
+            justify="center"
         >
             <Card
                 title={Constants.DELUXE_NACHOS_TITLE}
