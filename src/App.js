@@ -6,6 +6,7 @@ import Menu from "./pages/menu/menu";
 import Contact from "./pages/contact/contact";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
+import About from "./components/about/about";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Header />
           <Toolbar />
           <Home />
-          {/* <About /> */}
+          <About />
           <Footer />
         </Route>
         <Route path='/menu'>
