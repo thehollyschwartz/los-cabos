@@ -1,15 +1,27 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
+import { Grid, makeStyles } from "@material-ui/core";
 
 const styles = makeStyles(() => ({
-
-
+    root: {
+        backgroundColor: "var(--tertiary)"
+    }
 }));
 
 function Menu() {
     const classes = styles();
     return (
-        <div></div>
+        <Grid
+            className={classes.root}
+            container
+            direction="column"
+            alignItems="center"
+            justify="center"
+        >
+            <p>jdhwfkjehwflkjrwhfkjwrehfkjw</p>
+            <p>jdhwfkjehwflkjrwhfkjwrehfkjw</p>
+            <p>jdhwfkjehwflkjrwhfkjwrehfkjw</p>
+            <p>jdhwfkjehwflkjrwhfkjwrehfkjw</p>
+        </Grid>
     )
 }
 

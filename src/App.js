@@ -22,15 +22,15 @@ function App() {
         <Route path='/menu'>
           <Header />
           <Toolbar />
-          {/* <Menu />
-          <About /> */}
+          <Menu />
+          <About />
           <Footer />
         </Route>
         <Route path='/contact'>
           <Header />
           <Toolbar />
-          {/* <Contact />
-          <About /> */}
+          <Contact />
+          <About />
           <Footer />
         </Route>
       </Switch>

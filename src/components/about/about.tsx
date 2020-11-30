@@ -6,6 +6,7 @@ import Background from "../../assets/images/background-about.svg";
 const styles = makeStyles(() => ({
     root: {
         color: "var(--white)",
+        // backgroundColor: "#161515",
         backgroundImage: `url(${Background})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
